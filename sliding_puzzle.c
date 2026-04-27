@@ -117,8 +117,13 @@ void cozulebilir_yap(OyunDurumu *durum) {
     }
 }
 
-
 void tahtayi_yazdir(OyunDurumu *durum) {
+	
+    system("cls || clear");
+    printf("--- 3x3 SLIDING PUZZLE OYUNUNA HOS GELDINIZ ---\n");
+    printf("Hedef: Sayilari 1'den 8'e kadar siralamak ve boslugu en sona getirmek.\n");
+    printf("Kontroller: W (Yukari), S (Asagi), A (Sol), D (Sag)\n");
+    printf("-------------\n");
     printf("\nTahta Durumu (Hamle: %d)\n", durum->hamle_sayisi);
     printf("-------------\n");
     for (int i = 0; i < 3; i++) {
